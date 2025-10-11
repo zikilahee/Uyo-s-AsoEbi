@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aso Ebi Payment Confirmation</title>
+  <link rel="stylesheet" href="style.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <header>
+    <h1>RUBY & LEO’s Wedding 💍</h1>
+    <p>Join us in style! Secure your Aso Ebi below.</p>
+  </header>
+
+  <section id="asoebi-details" class="section">
+    <h2>Aso Ebi Details</h2>
+    <p><strong>Material(Women):</strong> Peach Lace</p>
+    <p><strong>Material(Men):</strong> Peach cap</p>
+    <p><strong>Price(Women):</strong> ₦25,000 (5 yards)</p>
+    <p><strong>Price(Women):</strong> ₦25,000 (5 yards)</p>
+    <p><strong>Account Name:</strong>Lucy.O.Abdullahi</p>
+    <p><strong>Bank Name:</strong> GTBank</p>
+    <p><strong>Account Number:</strong> 0023245421</p>
+    <p>Please make payment to the account above before filling out the confirmation form.</p>
+  </section>
+
+  <section id="confirmation" class="section">
+    <h2>Confirm Your Aso Ebi Payment</h2>
+    <p>Please fill in your details and upload your payment receipt below.</p>
+
+    <form id="asoEbiForm" action="https://formspree.io/f/xvgwwnog" method="POST" enctype="multipart/form-data">
+      <label>Full Name</label>
+      <input type="text" name="Full Name" required>
+
+      <label>Phone Number</label>
+      <input type="tel" name="Phone Number" required>
+
+      <label>Number of Fabric(s)</label>
+      <input type="number" name="Amount Paid" required>
+
+      <label>Bank Used</label>
+      <input type="text" name="Bank Used" required>
+
+    
+<label for="delivery">Delivery Method</label>
+        <select id="delivery" name="delivery">
+          <option value="pickup">Pickup</option>
+          <option value="delivery">Delivery</option>
+        </select>
+
+        
+<label>Delivery Address</label>
+      <textarea name="Notes"></textarea>
+
+        
+      <label>Date of Payment</label>
+      <input type="date" name="Date of Payment" required>
+
+      <label>Additional Notes (optional)</label>
+      <textarea name="Notes" placeholder="e.g. Payment made by my husband"></textarea>
+
+        <div class="socials">
+        <div class="icons">
+
+          
+            <a href="https://wa.me/2348060450067?text=Hello,%20I%20would%20like%20to%20confirm%20my%20receipt!!">
+            <i class="fab fa-whatsapp"></i></a>
+
+            
+        </div>
+      </div>
+
+            <p>SEND RECEIPT HERE☝️</p>
+
+  
+
+      <button type="submit">Submit Confirmation</button>
+
+      <div id="form-status"></div>
+    </form>
+  </section>
+
+  <footer>
+    <p>Made with 💕 for Ruby & Leo’s Wedding | 2026</p>
+    <p>Designed & Developed by <span class="creator">Abdullahi Isaac Ugbede-ojo</span></p>
+    <p>Email: <a href="mailto:abdullahiisaac06@gmail.com">abdullahiisaac06@gmail.com</a> |
+       Phone: <a href="tel:+2348123492138">+2348123492138</a></p>
+       
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
